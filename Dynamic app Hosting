@@ -29,6 +29,6 @@ spec:
     app: myapp
   ports:
     - protocol: TCP
-      port: 80
-      targetPort: 80
+      port: 80 #If you change the port 80 to another port then you have to browse the ELB DNS along with the changed port number(ex: ELB-DNS:8080 or 9090 or 70 or 90 etc...)
+      targetPort: 8080
   type: LoadBalancer
