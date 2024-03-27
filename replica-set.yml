@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: ecomm-replicaset
+  name: wordpress
   labels: 
-    app: ecomm-app
+    app: wordpress
     tier: frontend
 spec:
   replicas: 2
@@ -16,7 +16,7 @@ spec:
         tier: frontend
     spec:
       containers:
-      - name: ecomm
-        image: ravi2krishna/webapp
+      - name: wordpress
+        image: sushree1/wordpress
         ports:
            - containerPort: 80
