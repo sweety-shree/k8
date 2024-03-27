@@ -28,6 +28,6 @@ spec:
     spec:
       containers:
       - name: wordpress
-        image: akiranreddy/wordpress
+        image: sushree1/wordpress
         ports:
         - containerPort: 80
